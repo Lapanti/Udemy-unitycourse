@@ -6,18 +6,21 @@ public class Brick : MonoBehaviour {
 	public int maxHits;
 	
 	private int timesHit;
+	private LevelManager levelManager;
 
 	// Use this for initialization
 	void Start () {
 		timesHit = 0;
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+		levelManager = GameObject.FindObjectOfType<LevelManager>();
 	}
 
 	void OnCollisionEnter2D (Collision2D collision) {
 		timesHit ++;
+		SimulateWin();
+	}
+
+	// TODO Remove this method
+	void SimulateWin () {
+		levelManager.LoadNextLevel ();
 	}
 }
