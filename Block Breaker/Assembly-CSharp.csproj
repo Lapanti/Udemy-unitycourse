@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\BlinkScript.cs" />
      <Compile Include="Assets\Scripts\LevelManager.cs" />
+     <Compile Include="Assets\Scripts\MusicPlayer.cs" />
      <Compile Include="Assets\Scripts\RainbowScript.cs" />
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
